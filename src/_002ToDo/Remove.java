@@ -38,6 +38,5 @@ public class Remove extends Recall {
             gradeBook1.remove(rem);
         }
         Menu.menu();
-
     }
 }

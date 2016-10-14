@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.IOException;
-
 /**
  * Created by stevebowling on 10/13/16.
  */
@@ -26,8 +25,5 @@ public class Recall {
         while (inFile3.hasNextLine()){
             gradeBook3.add(inFile3.nextLine()+"\n");
         }
-
     }
-
-
 }

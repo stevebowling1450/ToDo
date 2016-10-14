@@ -1,10 +1,6 @@
 package _002ToDo;
 import java.io.IOException;
-
-
-
 import java.util.Scanner;
-
 /**
  * Created by stevebowling on 10/11/16.
  */
@@ -36,7 +32,5 @@ public class Menu {
                 Save.save();
                 break;
         }
-
-
     }
 }

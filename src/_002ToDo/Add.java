@@ -1,9 +1,6 @@
 package _002ToDo;
-import java.io.*;
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.io.IOException;
-
 /**
  * Created by stevebowling on 10/11/16.
  */

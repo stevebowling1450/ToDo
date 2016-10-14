@@ -1,9 +1,7 @@
 package _002ToDo;
-
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
-
 /**
  * Created by stevebowling on 10/13/16.
  */
