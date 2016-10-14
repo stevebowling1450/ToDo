@@ -18,17 +18,23 @@ public class Menu {
         System.out.println("Welcome to My ToDo App. \n Please choose :\n 1 to Add to your list. \n 2 to View your list." +
                 "\n 3 to Remove from your list. \n 4 for help. \n 5 to Save & Quit. ");
         choose= sc.nextInt();
-        if (choose==1){
-            Add.add();
-        }else if (choose==2){
-            View.view();
-        }else if (choose==3){
-            Remove.remove();
-        }else if (choose==4){
-          Help.help();
-        } else if (choose==5){
-            System.out.println("Thank you for using My ToDo App.");
-            Save.save();
+        switch (choose) {
+            case 1:
+                Add.add();
+                break;
+            case 2:
+                View.view();
+                break;
+            case 3:
+                Remove.remove();
+                break;
+            case 4:
+                Help.help();
+                break;
+            case 5:
+                System.out.println("Thank you for using My ToDo App.");
+                Save.save();
+                break;
         }
 
 

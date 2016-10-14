@@ -13,22 +13,24 @@ public class View extends Recall{
         System.out.println("Witch list would you like to see. \n Please choose :\n 1  Your Personal List. \n 2  Your Grocery List." +
                 "\n 3 Your Work List. ");
         choose = sc.nextInt();
-        if (choose==1) {
-            System.out.println("This is your personal list: ");
-            for (int i = 0; i < gradeBook1.size(); i++)
-            System.out.println(gradeBook1.get(i));
+        switch (choose) {
+            case 1:
+                System.out.println("This is your personal list: ");
+                for (int i = 0; i < gradeBook1.size(); i++)
+                    System.out.println(i + ". " + gradeBook1.get(i));
 
-        }
-        else if (choose==2) {
-            System.out.println("This is your personal list: ");
-            for (int i = 0; i < gradeBook2.size(); i++)
-                System.out.println(gradeBook2.get(i));
-        }
-        else if (choose==3) {
-            System.out.println("This is your personal list: ");
-            for (int i = 0; i < gradeBook3.size(); i++)
-                System.out.println(gradeBook3.get(i));
+                break;
+            case 2:
+                System.out.println("This is your personal list: ");
+                for (int i = 0; i < gradeBook2.size(); i++)
+                    System.out.println(i + ". " + gradeBook2.get(i));
+                break;
+            case 3:
+                System.out.println("This is your personal list: ");
+                for (int i = 0; i < gradeBook3.size(); i++)
+                    System.out.println(i + ". " + gradeBook3.get(i));
 
+                break;
         }
         Menu.menu();
 

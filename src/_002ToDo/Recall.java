@@ -24,7 +24,7 @@ public class Recall {
         }
         Scanner inFile3 = new Scanner(new FileReader("work.txt"));
         while (inFile3.hasNextLine()){
-            gradeBook3.add(inFile3.nextLine());
+            gradeBook3.add(inFile3.nextLine()+"\n");
         }
 
     }

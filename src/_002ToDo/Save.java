@@ -9,30 +9,23 @@ import java.io.IOException;
  */
 public class Save extends Add{
     public static void save () throws IOException{
-        String sum1=" ";
-        for (int i = 0; i < gradeBook1.size(); i++) {
-            sum1 = sum1 + gradeBook1.get(i);
-        }
+
         PrintWriter outFile = new PrintWriter(new FileWriter("personal.txt"));
-        outFile.println(sum1);
+        for (int i = 0; i < gradeBook1.size(); i++) {
+            outFile.println(gradeBook1.get(i));
+        }
         outFile.close();
 
-
-        String sum2=" ";
-        for (int i = 0; i < gradeBook2.size(); i++) {
-            sum2 = sum2 + gradeBook2.get(i);
-        }
         PrintWriter outFile1 = new PrintWriter(new FileWriter("grocery.txt"));
-        outFile1.println(sum2);
+        for (int i = 0; i < gradeBook2.size(); i++) {
+            outFile1.println(gradeBook2.get(i));
+        }
         outFile1.close();
 
-
-        String sum3=" ";
-        for (int i = 0; i < gradeBook3.size(); i++) {
-            sum3 = sum3+ gradeBook3.get(i);
-        }
         PrintWriter outFile2 = new PrintWriter(new FileWriter("work.txt"));
-        outFile.println(sum3);
-        outFile.close();
+        for ( int i = 0; i < gradeBook3.size(); i++) {
+            outFile2.println(gradeBook3.get(i));
+        }
+        outFile2.close();
     }
 }
